@@ -5,7 +5,7 @@ const path = require('path');
 const nodemailer = require('nodemailer');
 
 const app = express();
-const PORT = process.env.port || 3000
+const PORT = process.env.PORT || 3000
 // View engine setup
 app.engine('handlebars', exphbs({defaultLayout: 'main',extname:'.handlebars'}));
 app.set('view engine', 'handlebars');
